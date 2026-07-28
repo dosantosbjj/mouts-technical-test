@@ -1,11 +1,12 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  allowCypressEnv: false,
-
+  allowCypressEnv: true,
   e2e: {
-    setupNodeEvents(on, config) {
-      
+    baseUrl: "https://front.serverest.dev/login/",
+    env: {
+      apiHost: "https://serverest.dev",
     },
+    setupNodeEvents(on, config) {},
   },
 });

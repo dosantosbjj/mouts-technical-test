@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/dosantosbjj/mouts-technical-test#readme",
   "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
     "cypress": "^15.19.0"
   }
 }
