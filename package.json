@@ -1,0 +1,24 @@
+{
+  "name": "mouts-technical-test",
+  "version": "1.0.0",
+  "description": "Repositório contendo o teste técnico para vaga de SR QA Tester da Mouts TI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dosantosbjj/mouts-technical-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dosantosbjj/mouts-technical-test/issues"
+  },
+  "homepage": "https://github.com/dosantosbjj/mouts-technical-test#readme",
+  "devDependencies": {
+    "cypress": "^15.19.0"
+  }
+}
