@@ -17,17 +17,23 @@ Cypress.Commands.add('generateUserData', () => {
     nome: faker.person.firstName(),
     email: faker.internet.email().toLowerCase(),
     password: faker.internet.password(),
-    administrador: false
+    administrador: "false"
   };
 });
 
 Cypress.Commands.add('createUser', (userData) => {
-    cy.request({
+    return cy.request({
         method: 'POST',
         url: `${Cypress.env('apiHost')}/usuarios`,
         body: userData,
         failOnStatusCode: false,
-    }).then((response) => {
-        return response;
     })
+});
+
+Cypress.Commands.add('deleteUserById', (id) => {
+  return cy.request({
+    method: 'DELETE',
+    url: `${Cypress.env('apiHost')}/usuarios/${id}`,
+    failOnStatusCode: false,
+  });
 });
