@@ -97,7 +97,7 @@ describe("API product tests", () => {
       })
     })
 
-    it.only("Should fail when quantidade is negative", () => {
+    it("Should fail when quantidade is negative", () => {
       cy.generateProductData().then((productData) => {
         productData.quantidade = -5
 
