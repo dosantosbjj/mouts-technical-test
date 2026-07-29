@@ -4,7 +4,7 @@
   "description": "Repositório contendo o teste técnico para vaga de SR QA Tester da Mouts TI",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/dosantosbjj/mouts-technical-test#readme",
   "devDependencies": {
     "@faker-js/faker": "^10.5.0",
-    "cypress": "^15.19.0"
+    "cypress": "^15.19.0",
+    "mochawesome": "^7.1.4"
   }
 }
