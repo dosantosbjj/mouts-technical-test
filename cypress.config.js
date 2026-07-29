@@ -11,7 +11,7 @@ module.exports = defineConfig({
     json: true,
   },
   e2e: {
-    baseUrl: "https://front.serverest.dev/login/",
+    baseUrl: "https://front.serverest.dev",
     env: {
       apiHost: "https://serverest.dev",
     },

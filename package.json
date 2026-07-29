@@ -4,7 +4,8 @@
   "description": "Repositório contendo o teste técnico para vaga de SR QA Tester da Mouts TI",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "test": "cypress run",
+    "cy:open": "cypress open"
   },
   "repository": {
     "type": "git",

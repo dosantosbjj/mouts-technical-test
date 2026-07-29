@@ -69,3 +69,8 @@ Cypress.Commands.add('deleteProductById', (id, token) => {
     failOnStatusCode: false,
   })
 })
+
+Cypress.Commands.add('fillLoginForm', (email, password) => {
+  cy.get('[data-testid="email"]').type(email)
+  cy.get('[data-testid="senha"]').type(password)
+})
