@@ -33,7 +33,7 @@ npm install
 
 * **Run Tests Headlessly (CI / CLI Mode):**
   ```bash
-  npm run cy:run
+  npm run test
   # or
   npx cypress run
   ```
