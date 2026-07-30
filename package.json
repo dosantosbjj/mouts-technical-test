@@ -23,5 +23,8 @@
     "@faker-js/faker": "^10.5.0",
     "cypress": "^15.19.0",
     "mochawesome": "^7.1.4"
+  },
+  "dependencies": {
+    "joi": "^18.2.3"
   }
 }
