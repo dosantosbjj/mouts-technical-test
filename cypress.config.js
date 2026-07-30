@@ -12,6 +12,9 @@ module.exports = defineConfig({
   },
   e2e: {
     baseUrl: "https://front.serverest.dev",
+    defaultCommandTimeout: 10000,
+    requestTimeout: 6000,
+    retries: { runMode: 3 , openMode: 0},
     env: {
       apiHost: "https://serverest.dev",
     },

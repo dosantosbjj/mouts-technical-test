@@ -74,3 +74,9 @@ Cypress.Commands.add('fillLoginForm', (email, password) => {
   cy.get('[data-testid="email"]').type(email)
   cy.get('[data-testid="senha"]').type(password, { log: false })
 })
+
+Cypress.Commands.add('fillRegistrationForm', (nome, email, password) => {
+  cy.get('[data-testid="nome"]').type(nome)
+  cy.get('[data-testid="email"]').type(email)
+  cy.get('[data-testid="password"]').type(password, { log: false })
+})

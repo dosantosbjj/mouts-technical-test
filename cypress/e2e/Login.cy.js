@@ -5,6 +5,7 @@ describe("Login test scenarios", () => {
     cy.visit("/login")
     cy.title().should("eq", "Front - ServeRest")
     cy.url().should("eq", `${Cypress.config().baseUrl}/login`)
+    cy.get('[data-testid="email"]').should('be.visible')
   })
 
   const adminMenus = [
@@ -62,6 +63,8 @@ describe("Login test scenarios", () => {
           expect(response.status).eq(201)
           const adminId = response.body._id || response.body.id
           this.adminUserId = adminId
+          // Small pause to ensure backend propagation
+          cy.wait(500)
           cy.intercept("POST", "**/login").as("loginRequest")
           cy.fillLoginForm(adminData.email, adminData.password)
           cy.get('[data-testid="entrar"]').click()
